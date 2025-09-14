@@ -1,0 +1,72 @@
+/* === Cashew-inspired palette update === */
+.contact-section {
+  background-color: #E7D9C1; /* cashew beige */
+  padding: 80px 20px;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #C8A97E, #3A7BD5); /* golden → blue */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 6px rgba(139, 107, 74, 0.25); /* roasted brown glow */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(139, 107, 74, 0.12); /* warm shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(200, 169, 126, 0.25); /* subtle golden edge */
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(58, 123, 213, 0.25); /* blue accent on hover */
+}
+
+.contact-icon {
+  font-size: 28px;
+  color: #3A7BD5; /* cashew blue */
+  margin-right: 20px;
+  min-width: 35px;
+}
+
+.contact-item h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #4A3B2A; /* dark brown */
+  font-weight: 600;
+}
+
+.contact-item p {
+  margin: 5px 0 0;
+  color: #6F5B45; /* muted brown */
+  font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .contact-icon {
+    margin-bottom: 10px;
+  }
+}
